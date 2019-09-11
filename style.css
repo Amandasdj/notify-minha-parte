@@ -7,12 +7,13 @@ body{
                          "section section section"
                          "footer footer footer";
     grid-template-columns: 1fr 1fr 1fr;   
-    grid-template-rows: 8px 210px 195px 180px 150px 60px;         
+    grid-template-rows: 8px 210px 460px 180px 150px 60px;         
     margin: 0;
+    font-family: 'roboto', sans-serif;
 }
 
 .banner{
-    background-image: url(../notifysite/images/banner.png);
+    background-image: url(images/banner.png);
     background-size: cover;
     color: white;
     grid-area: banner;
@@ -25,8 +26,39 @@ body{
     align-items: flex-end;
     margin-left: 50px;
 }
+ button{ background-color: rgba(10,10,10, 0.6);
+    border-style: none;
+    border-radius: 50%;
+    color: white;
+    margin: 0px 10px 10px 0px;
+    height: 30px;
+    width: 30px;
+   }
+   .botao-header img{
+       width: 18px;
+       justify-content: center;
+       
+       
+   }
+   .botao-header{background-color:#2ccd71;
+    border-style: none;
+    border-radius: 50%;
+    color: white;
+    margin: 0px 10px 10px 0px;
+    height: 30px;
+    width: 30px;
+    justify-content: center;
+   
+    
 
-.banner div img{
+   }
+.ios{
+    margin-left: 60px;
+}
+.banner div button:hover{
+    background-color: #2ccd71;
+}
+.hand{
     width: 150px;
 }
 .banner h1{
@@ -34,7 +66,7 @@ body{
     font-size: 15pt;
     font-weight: normal;
     text-decoration: none;
-    margin-left: 50px;
+    margin-left: 60px;
     margin-top: 50px;
     
 }
@@ -48,18 +80,25 @@ body{
 }
 nav{
     grid-area: nav;
-    background-color: rgb(50, 206, 50);
-
+    background-color:#2ccd71
 }
 header{
-    background-color: blue;
+    background-color: white;
     grid-area: header;
-}
+    text-align: center;
+    margin-top: 15px;
+    display: block;  
+  }
+  header p{
+      color:#a3a3a3;
+      font-size: 15px;
+   }
 main{
-    background-color: gray;
+    background-color:#e3e3e3;
     grid-area: main;
 
 }
+
 section{
     background-color: black;
     grid-area: section;
